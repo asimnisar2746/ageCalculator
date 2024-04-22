@@ -1,0 +1,119 @@
+@font-face {
+    font-family: pop;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Pop;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 94%);
+    gap: 10px;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px 10px 65px 10px;
+}
+.head{
+    display: flex;
+    gap: 15px;
+
+}
+.sect{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.label{
+    font-size: 6px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+input{
+    border: 1px solid hsl(0, 4%, 80%);
+    outline: none;
+    width: 65px;
+    height: 30px;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+}
+input:focus{
+    border: 1.2px solid hsl(259, 100%, 65%);
+}
+input::-webkit-inner-spin-button{
+    appearance: none;
+}
+.icon{
+    display: flex;
+    margin-block: 20px;
+}
+.icon hr{
+    height: 0px;
+    margin-top: 29px;
+    width: 260px;
+    border: 1px solid hsl(0, 4%, 80%);
+}
+.submitBtn{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    outline-style: none;
+    cursor: pointer;
+    border: none;
+    
+}
+.submitBtn:hover{
+    background-color: black;
+}
+.error{
+    font-size: 0.5rem;
+    color: red;
+    display: none;
+}
+.show .number{
+    font-size: 2.4rem;
+    font-weight: bolder;
+    color: hsl(259, 100%, 65%);
+}
+.display{
+    display: flex;
+    letter-spacing: 2px;
+    flex-direction: column;
+    font-weight: 950;
+    font-style: italic;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media(max-width: 768px) {
+    input{
+        width: 80%;
+    }
+    .display{
+        font-size: 1.75rem;
+    }
+    .submitBtn{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        right: 40%;
+        top: 10px;
+    }
+    .icon img{
+        transform: scale(0.6);
+    }
+}
